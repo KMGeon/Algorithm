@@ -1,4 +1,4 @@
-package Baek.grid;
+package practice.baek;
 
 import java.util.Scanner;
 

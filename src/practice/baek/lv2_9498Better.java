@@ -1,4 +1,4 @@
-package Baek.grid;
+package practice.baek;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
