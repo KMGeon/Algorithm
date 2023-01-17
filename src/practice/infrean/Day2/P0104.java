@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class P0104 {
-//    string builder로 이용하기
+    //    string builder로 이용하기
+    //  전체 뒤집는 건 stringbuilder를 이용
+    // 특정문자 바꾸는 건 2번 방식으로
 
     public ArrayList<String> solution(int n , String[] str){
         ArrayList<String> answer = new ArrayList<>();
