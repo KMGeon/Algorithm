@@ -1,20 +1,14 @@
 package practice.infrean.Day2;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class test {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String[] test = new String[1];
-        for (int i = 0; i < test.length; i++) {
-            test[i] = sc.next();
-        }
-        for (String x : test) {
-            char[] chars = x.toCharArray();
-            for (int i = 0; i < chars.length; i++) {
-                System.out.println(chars[i]);
-            }
-        }
-
+        String test = new StringBuilder().append("런닝맨").append("재밌다").replace(0,1,"하이").reverse().toString();
+        System.out.println(test);
     }
 }
