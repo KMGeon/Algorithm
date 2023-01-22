@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main {
+public class P0109_2 {
     public int solution(String str) {
         String answer = "";
         for(char x : str.toCharArray()){
@@ -17,7 +17,7 @@ public class Main {
 
 
     public static void main(String[] args) throws IOException {
-        Main main = new Main();
+        P0109_2 main = new P0109_2();
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         String str = bf.readLine();
         System.out.println(main.solution(str));
