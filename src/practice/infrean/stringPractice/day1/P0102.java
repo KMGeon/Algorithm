@@ -1,4 +1,4 @@
-package practice.infrean.Day1;
+package practice.infrean.stringPractice.day1;
 
 import java.util.Scanner;
 //입력값 받아서 대소문자 바꾸기

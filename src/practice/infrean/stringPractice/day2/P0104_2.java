@@ -1,4 +1,4 @@
-package practice.infrean.Day2;
+package practice.infrean.stringPractice.day2;
 
 import java.util.ArrayList;
 import java.util.Scanner;
