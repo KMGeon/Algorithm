@@ -1,4 +1,4 @@
-package practice.infrean.Day1;
+package practice.infrean.stringPractice.day1;
 
 import java.util.Scanner;
 

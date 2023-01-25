@@ -1,4 +1,4 @@
-package practice.infrean.Day2;
+package practice.infrean.stringPractice.day2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
