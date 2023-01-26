@@ -1,30 +1,33 @@
 package practice.infrean.arr;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class P0201 {
-    public ArrayList<Integer> solution(int n , int[] arr) {
+    public ArrayList<Integer> solution(int n, int[] arr) {
         ArrayList<Integer> list = new ArrayList<>();
+        list.add(arr[0]);
+        for (int i = 1; i < n; i++) {
+            if(arr[i]>arr[i-1]){
+                list.add(arr[i]);
+            }
+        }
         return list;
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)   {
         P0201 p0201 = new P0201();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];
 
-        for(int i=0; i<n; i++) {
+        for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
 
-        for(int x : p0201.solution(n,arr)){
-            System.out.println(x+" ");
+        for (int x : p0201.solution(n, arr)) {
+            System.out.print(x + " ");
         }
     }
 }
