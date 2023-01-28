@@ -7,14 +7,16 @@ import java.util.Scanner;
 public class P0205 {
     public int solution(int inputNum) {
         int answer = 0;
-        int[]ch = new int[inputNum+1];
-        for(int i=2;i<=inputNum;i++){
-            answer++;
-            for(int j=i;j<=inputNum;j=j+1){
-                ch[j] = 1;
+        int[] arr = new int[inputNum+1];
+        for(int i=2; i<=inputNum ; i++){
+            if(arr[i]==0){
+                answer++;
+                for(int j=i;j<=inputNum;j=j+i){
+                    arr[j]=1;
+                }
             }
         }
-        return answer ;
+       return answer;
     }
 
     public static void main(String[] args) {
