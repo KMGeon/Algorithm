@@ -2,7 +2,7 @@ package practice.programmers.lv1;
 
 import java.util.Scanner;
 
-public class mugeon_1 {
+public class Main {
         public int solution(int num1, int num2) {
             int answer = 0;
 
@@ -17,7 +17,7 @@ public class mugeon_1 {
         int num1 = sc.nextInt();
         int num2 = sc.nextInt();
 
-        mugeon_1 mugeon1 = new mugeon_1();
+        Main mugeon1 = new Main();
         System.out.println(mugeon1.solution(num1 , num2));
 
     }
