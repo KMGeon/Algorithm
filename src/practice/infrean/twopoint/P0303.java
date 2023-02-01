@@ -4,22 +4,28 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class P0303 {
-    public int solution(int mechulNum , int n1 , int[]arr){
-        int answer=0;
-        for (int i=n1;i<n1+n1;i++){
-            answer+=arr[n1];
+    public int solution(int n, int k, int[] arr) {
+        int answer, sum = 0;
+        for (int i = 0; i < k; i++) {
+            sum += arr[i];
+        }
+        answer = sum;
+        for (int i = k; i < n; i++) {
+            sum += (arr[i] - arr[i - k]);
+            answer = Math.max(answer, sum);
         }
         return answer;
     }
+
     public static void main(String[] args) {
-        P0303 main = new P0303();
-        Scanner sc = new Scanner(System.in);
-        int mechulNum = sc.nextInt();
-        int n1 = sc.nextInt();
-        int[]arr = new int[mechulNum];
-        for (int i = 0; i < n1; i++){
-            arr[i] = sc.nextInt();
+        P0303 T = new P0303();
+        Scanner kb = new Scanner(System.in);
+        int n = kb.nextInt();
+        int k = kb.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = kb.nextInt();
         }
-        System.out.println(main.solution(mechulNum,n1,arr));
+        System.out.print(T.solution(n, k, arr));
     }
 }

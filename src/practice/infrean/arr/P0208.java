@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class P0208 {
-    public int[] solution(int a1 , int[] arr) {
-        int[] answer = new int[a1];
-        for(int i=0; i<a1; i++) {
+    public int[] solution(int n , int[] arr) {
+        int[] answer = new int[n];
+        for(int i=0; i<n; i++) {
             int cnt = 1;
-            for(int j=0;j<a1;j++){
+            for(int j=0;j<n;j++){
                 if(arr[j]>arr[i]){
                     cnt++;
                 }
@@ -21,12 +21,12 @@ public class P0208 {
     public static void main(String[] args) {
         P0208 p0208 = new P0208();
         Scanner sc = new Scanner(System.in);
-        int a1 = sc.nextInt();
-        int[] num = new int[a1];
-        for (int i = 0; i < a1; i++) {
+        int n = sc.nextInt();
+        int[] num = new int[n];
+        for (int i = 0; i < n; i++) {
             num[i] = sc.nextInt();
         }
-        for (int i : p0208.solution(a1,num)) {
+        for (int i : p0208.solution(n,num)) {
             System.out.print(i+" ");
         }
     }
