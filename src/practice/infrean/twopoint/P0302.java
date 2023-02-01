@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class P0302 {
     public ArrayList<Integer> solution(int n1, int n2, int[] arr1, int[] arr2) {
         ArrayList<Integer> answer = new ArrayList<>();
         Arrays.sort(arr1);
@@ -25,7 +25,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        P0302 main = new P0302();
         Scanner sc = new Scanner(System.in);
         int n1 = sc.nextInt();
         int[] arr1 = new int[n1];
