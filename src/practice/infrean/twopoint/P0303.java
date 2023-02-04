@@ -1,6 +1,5 @@
 package practice.infrean.twopoint;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class P0303 {
