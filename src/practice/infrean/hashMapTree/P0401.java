@@ -12,14 +12,18 @@ public class P0401 {
         System.out.println(main.solution(n1, str));
     }
 
-    private String solution(int n1, String str) {
-        String answer = "";
+    private char solution(int n1, String str) {
+        char answer = ' ';
+        int max = Integer.MIN_VALUE;
         HashMap<Character, Integer> map = new HashMap<>();
         for (char c : str.toCharArray()) {
             map.put(c,map.getOrDefault(c,0)+1);
         }
         for (char x : map.keySet()) {
-            System.out.println(x);
+            if(map.get(x)>max){
+                max = map.get(x);
+                answer = x;
+            }
         }
         return answer;
     }
