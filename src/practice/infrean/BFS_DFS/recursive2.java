@@ -2,9 +2,8 @@ package practice.infrean.BFS_DFS;
 
 public class recursive2 {
     public static void main(String[] args) {
-
         recursive2 main = new recursive2();
-        main.DFS(11);
+        main.DFS(11);//11 ->10->
     }
 
     private void DFS(int n) {

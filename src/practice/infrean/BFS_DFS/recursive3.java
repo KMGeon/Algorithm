@@ -1,8 +1,8 @@
 package practice.infrean.BFS_DFS;
 
+//5 팩토리얼 5!
 public class recursive3 {
     public static void main(String[] args) {
-
         recursive3 main = new recursive3();
         main.DFS(5);
         System.out.println("main.DFS(5) = " + main.DFS(5));
