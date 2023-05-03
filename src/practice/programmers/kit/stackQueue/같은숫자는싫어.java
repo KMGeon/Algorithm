@@ -12,7 +12,7 @@ public class 같은숫자는싫어 {
         }
     }
 
-    private int[] solution(int[] arr) {
+    public int[] solution(int[] arr) {
         ArrayList<Integer> list = new ArrayList<>();
         int prev = -1;
 
