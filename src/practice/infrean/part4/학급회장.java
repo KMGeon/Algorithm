@@ -13,7 +13,7 @@ public class 학급회장 {
     }
 
     private char solution(int n, String str) {
-        char answer = 0;
+        char answer = '0';
         HashMap<Character, Integer> map = new HashMap<>();
         for (char x : str.toCharArray()) {
             map.put(x, map.getOrDefault(x, 0)+1); //get
