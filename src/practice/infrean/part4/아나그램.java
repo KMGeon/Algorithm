@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class 아나그램 {
     public static void main(String[] args) {
-        아나그램 main = new 아나그램();
+        아나그램 main = new 아나그램() ;
         Scanner sc = new Scanner(System.in);
 
         String str1 = sc.next();

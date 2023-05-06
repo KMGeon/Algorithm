@@ -21,7 +21,6 @@ public class 최대매출 {
         int answer=0;
 
         int p1=0,p2=0;
-
         return answer;
     }
 }
