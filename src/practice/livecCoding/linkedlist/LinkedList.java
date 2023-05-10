@@ -59,4 +59,32 @@ public class LinkedList {
             Node tmp = node(k - 1);
         }
     }
+
+    //삭제 1
+    public Object removeFirst() {
+        Node temp = head;
+        head = head.next;
+        Object retunData = temp.data;
+        temp = null;
+        size--;
+        return retunData;
+    }
+
+    //index 삭제
+    public Object remove(int k) {
+        if (k == 0) {
+            return removeFirst();
+        }
+        Node temp = node(k - 1);
+        Node todoDeleted = temp.next;//삭제하려는 노드
+        temp.next = temp.next.next;
+        Object returnData = todoDeleted.data;
+
+        if (todoDeleted == tail) {
+            tail = temp;
+        }
+        todoDeleted = null;
+        size--;
+        return todoDeleted;
+    }
 }

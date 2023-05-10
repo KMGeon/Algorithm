@@ -6,8 +6,8 @@ public class LinkMain {
         numbers.addLast(10);
         numbers.addLast(20);
         numbers.addLast(30);
-        System.out.println(numbers.node(0));
-        System.out.println(numbers.node(1));
-        System.out.println(numbers.node(2));
+
+        System.out.println(numbers.removeFirst());
+        System.out.println(numbers);
     }
 }
