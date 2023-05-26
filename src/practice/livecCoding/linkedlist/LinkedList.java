@@ -4,9 +4,23 @@ package practice.livecCoding.linkedlist;
 import java.awt.font.ImageGraphicAttribute;
 
 public class LinkedList {
+    // 머리 꼬리
     private Node head;
     private Node tail;
     private int size = 0; //몇개의 element가 있는가
+
+    //노드 데이터 + 다음
+    private static class Node {
+        private Object data;
+        private Node next;
+
+        //input : 처음에 가지고 있어야 하는 값
+        public Node(Object input) {
+            this.data = input;
+            this.next = null;
+        }
+    }
+
 
     public void addFirst(Object input) {
         Node newNode = new Node(input);
@@ -29,20 +43,6 @@ public class LinkedList {
         }
     }
 
-    private static class Node {
-        private Object data;
-        private Node next;
-
-        //input : 처음에 가지고 있어야 하는 값
-        public Node(Object input) {
-            this.data = input;
-            this.next = null;
-        }
-
-        public String toString() {
-            return String.valueOf(this.data);
-        }
-    }
 
     public Node node(int index) {
         Node x = head;

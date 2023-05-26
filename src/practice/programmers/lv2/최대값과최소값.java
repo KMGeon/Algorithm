@@ -1,6 +1,5 @@
 package practice.programmers.lv2;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class 최대값과최소값 {
@@ -12,9 +11,12 @@ public class 최대값과최소값 {
     }
 
     private String solution(String str) {
-        String answer="";
-        String[] s = str.split(" ");
-        System.out.println("s = " + Arrays.toString(s));
+        String answer = "";
+        char[] strArr = str.toCharArray();
+
+        char min = strArr[0];
+        System.out.println(min);
+
         return answer;
     }
 }
