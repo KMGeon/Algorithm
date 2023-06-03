@@ -16,15 +16,23 @@ public class 큰수출력하기 {
         }
 
 
-        for (Integer integer : main.solution(num,arr)) {
-            System.out.println(integer);
+        for (Integer integer : main.solution(num, arr)) {
+            System.out.print(integer);
         }
     }
 
     private ArrayList<Integer> solution(int num, int[] arr) {
-        ArrayList<Integer> anser = new ArrayList<>();
+        ArrayList<Integer> answer = new ArrayList<>();
+
+        answer.add(arr[0]);
+
+        for (int i = 1; i < num; i++) {
+            if (arr[i] > arr[i - 1]) {
+                answer.add(arr[i]);
+            }
+        }
 
 
-        return anser;
+        return answer;
     }
 }
