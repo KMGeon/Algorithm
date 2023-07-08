@@ -1,7 +1,6 @@
-package practice;
+package practice.temp;
 
 import java.util.HashMap;
-import java.util.Scanner;
 
 public class cote2 {
     public static void main(String[] args) {

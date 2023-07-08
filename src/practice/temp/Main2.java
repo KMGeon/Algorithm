@@ -1,4 +1,4 @@
-package practice;
+package practice.temp;
 
 import java.util.*;
 

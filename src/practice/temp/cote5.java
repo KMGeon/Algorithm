@@ -1,4 +1,4 @@
-package practice;
+package practice.temp;
 
 public class cote5 {
     public static void main(String[] args) {

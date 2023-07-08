@@ -1,8 +1,6 @@
-package practice;
+package practice.temp;
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.logging.Level;
 
 public class cote4 {
     public static void main(String[] args) {
