@@ -20,6 +20,7 @@ public class p7_1 {
         }
 
     }
+
     public static int[] solution(int[] nums, int target) {
         int[] returnNums = new int[2];
 

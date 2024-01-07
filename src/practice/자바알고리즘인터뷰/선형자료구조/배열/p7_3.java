@@ -13,17 +13,17 @@ public class p7_3 {
         for (int i : Objects.requireNonNull(p7_3.solution(nums, target))) {
             System.out.print(i);
         }
-
     }
 
     private static int[] solution(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
 
         for (int i = 0; i < nums.length; i++) {
-            if (map.containsKey(target - nums[i])) {
-                return new int[]{target-nums[i],i};
-            }
-            map.put(nums[i],i);
+            int needNumbs = target - nums[i];
+
+            if (map.containsKey(needNumbs)) return new int[]{needNumbs, i};
+
+            map.put(nums[i], i);
         }
         return null;
     }
