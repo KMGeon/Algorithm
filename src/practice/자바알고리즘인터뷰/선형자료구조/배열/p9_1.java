@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+// 브루드 포스로 풀면 시간 복잡도는 O(N^2)이다. 이걸 시간 복잡도를 더 최적화를 하려면 투 포인트로 해결이 가능하다.
 public class p9_1 {
     public static void main(String[] args) {
         int[] nums = {-1, 0, 1, 2, -1, -5};
@@ -18,17 +19,25 @@ public class p9_1 {
         Arrays.sort(nums);
 
         //-5, -1, -1, 0, 1, 2
+        for (int i = 0; i < nums.length; i++) {
 
-        for (int i = 0; i < nums.length-2; i++) {
+            if (i>0 && nums[i] == nums[i-1])continue;
 
-            for (int j = i + 1; j < nums.length - 1; j++) {
+            for (int j = i + 1; j < nums.length; j++) {
 
-                for (int k = j + 1; j < nums.length; k++) {
+                if (j>i+1 && nums[j]==nums[j-1])continue;
+
+                for (int k = j + 1; k < nums.length; k++) {
+
+                    if (k>j+1 && nums[k]==nums[k-1])continue;
+
+                    if (nums[i] + nums[j] + nums[k] == 0) {
+                        result.add(Arrays.asList(nums[i],nums[j],nums[k]));
+                    }
 
                 }
             }
         }
-
 
         return result;
     }
